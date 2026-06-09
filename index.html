@@ -2,12 +2,17 @@
 <html>
 <body>
 
-<h2>Calculator</h2>
+<h2>Full Calculator</h2>
 
 <input type="number" id="a" placeholder="First Number">
 <input type="number" id="b" placeholder="Second Number">
 
-<button onclick="add()">Add</button>
+<br><br>
+
+<button onclick="add()">+</button>
+<button onclick="subtract()">−</button>
+<button onclick="multiply()">×</button>
+<button onclick="divide()">÷</button>
 
 <p id="result"></p>
 
@@ -15,8 +20,25 @@
 function add() {
   let x = Number(document.getElementById("a").value);
   let y = Number(document.getElementById("b").value);
-  document.getElementById("result").innerHTML =
-    "Answer = " + (x + y);
+  document.getElementById("result").innerHTML = "Answer = " + (x + y);
+}
+
+function subtract() {
+  let x = Number(document.getElementById("a").value);
+  let y = Number(document.getElementById("b").value);
+  document.getElementById("result").innerHTML = "Answer = " + (x - y);
+}
+
+function multiply() {
+  let x = Number(document.getElementById("a").value);
+  let y = Number(document.getElementById("b").value);
+  document.getElementById("result").innerHTML = "Answer = " + (x * y);
+}
+
+function divide() {
+  let x = Number(document.getElementById("a").value);
+  let y = Number(document.getElementById("b").value);
+  document.getElementById("result").innerHTML = "Answer = " + (x / y);
 }
 </script>
 
